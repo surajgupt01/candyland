@@ -17,7 +17,7 @@ export default function Teams() {
         </h1>
         <div className="h-0.5 w-8 bg-[#FF00FF]"></div>
       </div>
-      <div className="grid grid-cols-4 items-center justify-center gap-2">
+      <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-center gap-2">
         {teamData.map((member) => (
           <div
             className="bg-[#F7F7F7] p-4 flex flex-col items-center justify-center gap-2 rounded-[40px] w-40 h-40"

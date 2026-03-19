@@ -1,12 +1,9 @@
-import Features from "@/components/Features";
-import Teams from "@/components/Teams";
 import Slider from "@/components/Slider";
 
 export default function Mural() {
   return (
     <div className="flex flex-col items-center p-4  gap-8">
-      <Features />
-      <Teams />
+
 
       <div>
         <div
@@ -26,14 +23,14 @@ export default function Mural() {
 
       <div className="flex flex-col items-center gap-4">
 
-        <p className="text-sm w-[55%] font-light text-center">
+        <p className="text-sm lg:w-[55%] font-light text-center">
           Das XXL Mural ist Teil der Candyland Event- und Pop-up-Location am
           Kurfürstendamm – ist aber auch isoliert als High-Impact-Werbefläche
           buchbar.
         </p>
 
       
-        <p className="text-sm w-[55%] font-light text-center">
+        <p className="text-sm lg:w-[55%] font-light text-center">
           Mit rund <Highlight>470 m² Fläche</Highlight> und ca.{" "}
           <Highlight>5,4 Mio. Kontakten pro Monat</Highlight> bietet die
           Muralfläche maximale Sichtbarkeit in einer der stärksten Lagen Berlins
@@ -41,7 +38,7 @@ export default function Mural() {
         </p>
 
         {/* Paragraph 3 */}
-        <p className="text-sm w-[55%] font-light text-center">
+        <p className="text-sm lg:w-[55%] font-light text-center">
           Ob fotorealistisch, künstlerisch, Green Mural® oder 3D-Inszenierung:
           <br />
           Die Fläche eignet sich für markante Kampagnen, kulturelle Statements
@@ -49,7 +46,7 @@ export default function Mural() {
         </p>
 
         {/* Paragraph 4 */}
-        <p className="text-sm w-[55%] font-light text-center">
+        <p className="text-sm lg:w-[55%] font-light text-center">
           In Kombination mit Container Branding, Main Hall Branding oder
           Event-Formaten vor Ort entsteht jedoch eine einzigartige Verbindung
           aus <Highlight>Reichweite und Aktivierung</Highlight> – außen starke
