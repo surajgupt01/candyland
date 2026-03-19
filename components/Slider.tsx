@@ -25,12 +25,12 @@ export default function Slider() {
         fontFamily: "sans-serif",
       }}
     >
-      {/* Cards Container */}
+
       <div
         className="min-h-90"
         style={{
-          position: "relative", // 1. Changed to relative to anchor absolute cards
-          height: "360px",      // 2. Fixed height to prevent the container from collapsing
+          position: "relative", 
+          height: "360px",      
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -38,25 +38,25 @@ export default function Slider() {
           padding: "20px 0",
         }}
       >
-        {/* 3. Map over the stable images array directly */}
+        
         {images.map((src, index) => {
-          // Calculate logical position relative to current
+
           const isCenter = index === current;
           const isLeft = index === (current - 1 + total) % total;
           const isRight = index === (current + 1) % total;
           
-          // Safety fallback: if you ever add more than 3 images, hide the rest
+          
           const isVisible = isCenter || isLeft || isRight;
 
           return (
             <div
-              key={index} // 4. This key is now perfectly stable
+              key={index} 
               onClick={() => {
                 if (isLeft) prev();
                 else if (isRight) next();
               }}
               style={{
-                position: "absolute", // 5. Absolute positioning stops layout thrashing
+                position: "absolute", 
                 left: 0,
                 right: 0,
                 margin: "0 auto",
